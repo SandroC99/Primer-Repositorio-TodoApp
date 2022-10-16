@@ -7,8 +7,18 @@
     border-radius: 10px;
 }
 
+.task.complete{
+    background-color: purple;
+    color: white;
+}
+
 .task span{
     font-size: 1.2rem;
+}
+
+.task.complete span{
+    text-decoration: line-through;
+    font-weight: bold;
 }
 
 .task button{
@@ -17,4 +27,9 @@
     background-color: red;
     color: white;
     padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task button:hover{
+    background-color: rgb(181, 0, 0);
 }
