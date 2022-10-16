@@ -1,35 +1,45 @@
-.task{
+.task {
     background-color: rgb(204, 255, 0);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 
-.task.complete{
+.task.complete {
     background-color: purple;
     color: white;
 }
 
-.task span{
-    font-size: 1.2rem;
+.task span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+    margin-right: 5px;
 }
 
-.task.complete span{
+.task.complete span {
     text-decoration: line-through;
     font-weight: bold;
 }
 
-.task button{
+.task button {
+    font-size: calc(10px + .5vw);
     border: none;
     border-radius: 10px;
     background-color: red;
     color: white;
     padding: 5px 10px;
     cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.task button:hover{
+.task button:hover {
     background-color: rgb(181, 0, 0);
 }

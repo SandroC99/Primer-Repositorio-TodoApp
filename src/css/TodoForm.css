@@ -3,6 +3,17 @@
     border: solid 2px black;
     border-radius: 1rem;
     padding: 20px 40px 0;
+    user-select: none;
+}
+
+.todo_container h1 {
+    color: #888C10;
+    font-size: calc(1rem + 3vw);
+    margin: 0 0 20px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .todo_container .todo_form {
@@ -19,6 +30,7 @@
 
 .todo_container .todo_form input {
     border-radius: 10px 0 0 10px;
+    outline: none;
 }
 
 .todo_container .todo_form button {
@@ -40,4 +52,22 @@
 
 .todo_list ul li {
     list-style: none;
+}
+
+@media screen and (max-width:940px) {
+
+    .App {
+        width: 90%;
+    }
+
+    .todo_container {
+        width: 90%;
+    }
+
+    .todo_container .todo_form input,
+    .todo_container .todo_form button {
+        padding: 5px 10px;
+        border: solid 1.5px #888C10;
+    }
+
 }
