@@ -1,0 +1,20 @@
+.task{
+    background-color: rgb(204, 255, 0);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.task span{
+    font-size: 1.2rem;
+}
+
+.task button{
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+}
