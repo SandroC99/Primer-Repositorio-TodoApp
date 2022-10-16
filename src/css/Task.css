@@ -20,6 +20,7 @@
     overflow: hidden;
     width: 80%;
     margin-right: 5px;
+    font-size: 20px;
 }
 
 .task.complete span {
@@ -28,7 +29,7 @@
 }
 
 .task button {
-    font-size: calc(10px + .5vw);
+    font-size: 15px;
     border: none;
     border-radius: 10px;
     background-color: red;
